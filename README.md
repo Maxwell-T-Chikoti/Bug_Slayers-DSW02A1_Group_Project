@@ -299,3 +299,4 @@ Used it as a local host for the website anc a local server for the sql database.
 Used CSS code libraries to style the website.
 	Drawio:
 For the UML, Database Schema and Flow chart diagrams.
+
