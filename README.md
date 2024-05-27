@@ -42,6 +42,7 @@ TEAM LEADER INFO	AS Maduna - Analyst, Group Leader, Documenter
 GITHUB LINK	https://github.com/Maxwell-T-Chikoti/Bug_Slayers-DSW02A1_Group_Project
 
 TRELLO LINK	https://trello.com/b/dfQWEHc6/vota-mzansi-project
+WEBSITE LINK : https://votamzansi.co.za/Group%20Project%20Today%20official/group%20project%20with%20home%20page/homepage.html#page-top
 
 	
 TEAM MEMBER NAMES	MT Chikoti
