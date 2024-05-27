@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMINISTRATOR</title>
+    <link rel="stylesheet" href="statsstyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <button id="menu-button"><img src="menu-burger.png" alt="☰"></button>
+            <div class="info">
+                <p>.ADMINISTRATOR</p>
+                <p>ID : 9202204720082</p>
+            </div>
+        </nav>
+        <aside class="sidebar" id="sidebar">
+            <img src="logo.jpg" alt="VotaMzansi" class="logo">
+            
+            <div class="menu_links" id="menu_links">
+                <button id="Dashboard"><a href="dashboard.html">Dashboard</a></button>
+                <button id="Statistics">Statistics</button>
+                <button id="Parties"><a href="parties.php">Parties</a></button>
+                <button id="Logout"><a href="http://127.0.0.1:5500/group%20project%20with%20home%20page/homepage.html">Logout</a></button>
+            </div>
+        </aside>
+        <main class="content">
+            <div class="column" id="column1">
+                <p>Statistics</p>
+                <div id="provinceschart">
+                    <canvas id="provinceChart" style="width:100%;max-width:700px"></canvas>
+                    <div id="simplestats">
+                        <p>Population: 60,000,000</p>
+                        <p>Registered people: 40,560,708</p>
+                        <p>Voted: 34,406,780</p>
+                    </div>
+                </div>
+                <div id="votes">
+                    <canvas id="votesChart" style="width:100%;max-width:700px"></canvas>
+                <div id="simplevotes">
+                    <p> ANC   -  7,569,492</p>
+                    <p> EFF   -  11,490,664</p>
+                    <p> DA    -  5,161,017</p>
+                    <p> MK    -  722,542</p>
+                    <p> IFP   -  378,475</p>
+                    <p> ADC   -  516,102</p>
+                    <p> FFP   -  481,695</p>
+                    <p> BOSA  -  619,322</p>
+                    <p> ASA   -  447,288</p>
+                    <p> ACDP  -  412,881</p>
+                    <p> RISE  -  550,508</p>
+                    <p> PAC   -  309,661</p>
+                    <p> UDM   -  447,288</p>
+                    <p> GOOD  -  378,475</p>
+                    <p> PA    -  516,102</p>
+                    <p> ICOSA -  550,508</p>
+                    <p> APC   -  344,068</p>
+                    <p> UIM   -  378,475</p>
+                    <p> ABC   -  412,881</p>
+                    <p> NCC   -  344,068</p>
+                    <p> FSD   -  412,881</p>
+                    <p> UCDP  -  378,475</p>
+                </div>   
+                    
+                </div>
+            </div>
+        </main>
+        <footer class="footer">Footer</footer>
+    </div>
+    <script src="sidebar.js"></script>
+    <script src="chart2.js"></script>
+    <script src="voteschart.js"></script>
+</body>
+</html>

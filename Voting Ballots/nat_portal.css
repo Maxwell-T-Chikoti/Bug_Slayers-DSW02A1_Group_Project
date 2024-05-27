@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'poppins', sans-serif;
+}
+body{
+    background-color: #e8e8e8;
+    padding-top: 65px;
+    overflow-y: auto;
+}
+nav{
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    height: 65px;
+    width: 100%;
+    background-color: rgb(102, 199, 88);
+}
+nav .logo{
+    margin-left: 30px;
+    display: flex;
+}
+
+
+nav ul{
+    display: flex;
+    column-gap: 40px;
+    margin-right: 120px;
+}
+nav ul li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+nav a:hover{
+    color: green;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    background-color: #ffff;
+    margin: 30px auto ;
+    border-radius: 20px;
+    padding: 20px 0;
+
+}
+
+.container h1{
+    justify-self: center;
+    width: fit-content;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.container .Parti{
+    display: flex;
+    width: 85%;
+    height: 60px;
+    border-bottom: 1px solid rgb(77, 77, 77);
+    margin: 4px auto;
+    padding: 5px 15px;
+    align-items: center;
+
+}
+.container .Parti .Partilogo{
+    height: 59px;
+    min-width: 120px;
+    max-width: 120px;
+    border: 1px solid black;
+}
+
+.input_container{
+    position: relative;
+    display: flex;
+}
+.input_container input{
+    position: absolute;
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    z-index: 2;
+    opacity: 0;
+}
+.Xtoggle{
+    height:40px;
+    width: 40px;
+    border: 2px solid black;
+}
+.X{
+    height:40px;
+    width: 40px;
+    display: none;
+}
+
+.container .Parti p{
+    width: 80%;
+    margin: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.container p{
+    font-size: 15px;
+    color: black;
+    margin: 10px 0;
+    margin: 1% 8%;
+}
+
+.container ._2buttons{
+    display: flex;
+    justify-content: space-between;
+    margin:0 5%;
+    padding: 0 2%;
+    width: 87%;
+}
+
+.container ._2buttons .cancel_button{
+    width:100px;
+    height: 36px;
+    border-radius: 17px;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(102, 199, 88);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+.container ._2buttons .Proceed_button{
+    width:100px;
+    height: 36px;
+    border-radius: 17px;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(102, 199, 88);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.container ._2buttons .cancel_button:hover{
+    border: 2px solid rgb(72, 0, 0);
+    background-color: rgb(210, 36, 36);
+}
+.container ._2buttons .Proceed_button:hover{
+    border: 2px solid green;
+}

@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'poppins', sans-serif;
+}
+body{
+    background-color: #ececec;
+    padding-top: 65px;
+    overflow-y: auto;
+}
+nav{
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    height: 65px;
+    width: 100%;
+    background-color: rgb(102, 199, 88);
+}
+nav .logo{
+    padding-left: 30px;
+    display: flex;
+}
+
+
+nav ul{
+    display: flex;
+    column-gap: 35px;
+}
+nav ul li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    cursor: pointer;
+}
+nav a:hover{
+    color: green;
+}
+
+
+nav .reg_button{
+    padding-right: 20px;
+}
+nav .reg_button button{
+    font-size: 16px;
+    height: 25px;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(102, 199, 88);
+}
+nav .reg_button button:hover{
+    border: 2px solid green;
+}
+.menu_icon{
+    display: none;
+}
+
+.menu_icon img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.Registercontainer{
+    width: 80%;
+    margin-top: 30px;
+    min-width: 420px;
+    height: 75%;
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    overflow-y: auto;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight:lighter;
+    color: rgb(102, 199, 88);
+    padding: 20px 0;
+}
+h3 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(141, 141, 141);
+}
+h3 :hover{
+    transition:ease 0.2s;
+    color: rgb(102, 199, 88);
+}
+
+
+form{
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0 auto;
+}
+form .row{
+    display: flex;
+}
+form .column{
+    width: 50%;
+    margin: 10px 20px 10px 20px;
+
+}
+form label{
+    display: block;
+    font-size: 17px;
+    padding-left: 6px;
+}
+form input{
+    height: 35px;
+    width: 100%;
+    border: 0.1px solid grey;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+form input[type="text"]:focus{
+    outline: none;
+    border: 2px solid rgb(102, 199, 88);
+    border-color: rgb(102, 199, 88);
+}
+.phonecntainer{
+    position: relative;
+    width: 100%;
+}
+.flag{
+    display: flex;
+    height: 100%;
+    width: 15%;
+    justify-content: space-evenly;
+    border-right: 1px solid gray;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    align-items: center;
+    background: none;
+    position: absolute;
+    left: 0;
+}
+form .flag img{
+    width: 30px;
+    height: 100%;
+}
+.phonecntainer input{
+    width: 86%;
+    padding-left: 15%;
+}
+
+form .biometrics1{
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+}
+form .biometrics{
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+}
+.biometrics img{
+    padding-left: 40px;
+}
+
+
+form .Circles{
+    display: flex;
+    justify-content: center;
+}
+form .circle{
+    margin: 4px 5px 0 5px;
+}
+form .circle img{
+    width: 14px;
+    height: 14px;
+}
+
+.Proceed_btn{
+    width: 40%;
+    height: 30px;
+    font-size: 16px;
+    color: rgb(102, 199, 88);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(102, 199, 88);
+    border-radius: 20px;
+    margin: 2% 20px;
+}
+
+nav ul.open{
+    transform: translate(0) !important;
+}
+
+label .optional{
+    opacity: 0.5;
+}
+
+
+@media screen and (max-width: 650px) {
+
+    body{
+        background-color: #ffffff;
+    }
+    
+    nav {
+      height: 65px;
+      position: fixed;
+      top: 0;
+      z-index: 2;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 65px;
+        left: 0;
+        background-color: rgb(102, 199, 88);
+        width: 100%;
+        padding: 10px 0 20px;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+    }
+
+    nav ul li{
+        height: 30px;
+    }
+    nav a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        cursor: pointer;
+    }
+    nav .reg_button{
+        display: none;
+    }
+    .menu_icon{
+        display: block;
+        margin-right: 30px;
+    }
+    
+    .Registercontainer {
+        width: 90%; 
+        height: 80%;
+        padding: 20px; 
+      }
+      .Registercontainer ul{
+          flex-direction: row;
+      }
+      
+      form .row{
+          display: flex;
+          flex-direction: column;
+      }
+      form .column {
+  
+        width: 100%;  
+      }
+      form label{
+          font-size: 22px;
+      }
+      form input{
+          width: 90%;
+          height: 50px;
+      }
+      .Proceed_btn{
+          width: 91.8%;
+    }
+    .phonecntainer{
+        position: relative;
+        width: 90%;
+    }
+}

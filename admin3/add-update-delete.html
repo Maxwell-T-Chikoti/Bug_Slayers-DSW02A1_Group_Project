@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Parties</title>
+    <link rel="stylesheet" href="add-update-delete.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Manage Parties</h1>
+            <div class="actions">
+                <button id="back-button">Back</button>
+                <button id="add-party">Add Party</button>
+            </div>
+        </header>
+        <main class="content">
+            <div class="party-list">
+                <ul id="party-list">
+                </ul>
+            </div>
+        </main>
+        <footer class="footer">Footer</footer>
+    </div>
+
+    <div id="party-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Add Party</h2>
+            <form id="party-form">
+                <label for="party-name">Party Name:</label>
+                <input type="text" id="party-name" name="party-name" required>
+                
+                <label for="party-image">Party Image:</label>
+                <input type="file" id="party-image" name="party-image" accept="image/*" required>
+                
+                <input type="hidden" id="party-index" name="party-index">
+                
+                <div class="form-actions">
+                    <button type="submit" id="submit-button">Submit</button>
+                    <button type="button" id="delete-button" style="display:none;">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="add-update-delete.js"></script>
+</body>
+</html>

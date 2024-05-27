@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VotaMzansi</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.jpg" alt="logo">
+        </div>
+        <div class="menu_links" id="menu_links">
+            <ul>
+                <li><a href="#">Voting</a></li>
+                <li><a href="#">Parties and Candidates</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Statistics</a></li>
+                <li><a href="#">Parties</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <p>.ADMINISTRATOR</p>
+            <p>ID : 0308045067082</p>
+        </div>
+    </nav>
+
+    <main>
+        <section class="statistics">
+            <div class="stats-header">
+                <h2>Statistics</h2>
+            </div>
+            <div class="stats-content">
+                <div class="stat-item">
+                    <h3>4 500 205</h3>
+                    <p>Registered People</p>
+                </div>
+                <div class="stat-item">
+                    <h3>16 000 000</h3>
+                    <p>Total Population</p>
+                </div>
+                <div class="stat-item">
+                    <h3>28.13</h3>
+                    <p>Growth Rate</p>
+                </div>
+                <div class="stat-graph">
+                    <img src="bar.jpg" alt="Map">
+                </div>
+            </div>
+        </section>
+        <section class="registrations">
+            <h2>Registrations</h2>
+        </section>
+        <section class="parties">
+            <h2>Parties and Candidates</h2>
+            <ul>
+                <li><img src="ANC.jpg" alt="ANC"> African National Congress</li>
+                <li><img src="EFF.jpg" alt="EFF"> Economic Freedom Fighters</li>
+                <li><img src="DA.jpg" alt="DA"> Democratic Alliance</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="contact">
+            <p>Get in touch with us</p>
+            <p>Phone: +27519857439</p>
+            <p>Email: votamzansi@gmail.com</p>
+            <p>Instagram: @VotaMzansi</p>
+        </div>
+    </footer>
+
+    
+
+    <div class="container">
+        <div class="maincontainer">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dashboardLink = document.getElementById('dashboard-link');
+            const statisticsLink = document.getElementById('statistics-link');
+            const partiesLink = document.getElementById('parties-link');
+            const settingsLink = document.getElementById('settings-link');
+            
+            const dashboardSection = document.getElementById('dashboard-section');
+            const statisticsSection = document.getElementById('statistics-section');
+            const registrationsSection = document.getElementById('registrations-section');
+            const partiesSection = document.getElementById('parties-section');
+            
+            function showSection(section) {
+                dashboardSection.style.display = 'none';
+                statisticsSection.style.display = 'none';
+                registrationsSection.style.display = 'none';
+                partiesSection.style.display = 'none';
+                
+                section.style.display = 'block';
+            }
+            
+            dashboardLink.addEventListener('click', () => showSection(dashboardSection));
+            statisticsLink.addEventListener('click', () => showSection(statisticsSection));
+            partiesLink.addEventListener('click', () => showSection(partiesSection));
+            settingsLink.addEventListener('click', () => showSection(dashboardSection));
+            
+           
+            showSection(dashboardSection);
+        });
+    </script>
+</body>
+</html>
