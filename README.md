@@ -1,13 +1,4 @@
 
-
-
-
-
-
-
-
-
- 
 Contents
 Team Members and their Roles	2
 Project Summary	2
@@ -30,11 +21,6 @@ Team Members and their Roles
 6.	AS Maduna	223036497	- Analyst, Group Leader, Documenter
 
 
-
-
-
-
-
 TABLE FOR LINKS AND SUBMISSION INFORMATION
 TEAM NAME	Bug Slayers
 TEAM EMAIL ADDRESS	votamzansi@gmail.com
@@ -42,6 +28,8 @@ TEAM LEADER INFO	AS Maduna - Analyst, Group Leader, Documenter
 GITHUB LINK	https://github.com/Maxwell-T-Chikoti/Bug_Slayers-DSW02A1_Group_Project
 
 TRELLO LINK	https://trello.com/b/dfQWEHc6/vota-mzansi-project
+
+
 WEBSITE LINK : https://votamzansi.co.za/Group%20Project%20Today%20official/group%20project%20with%20home%20page/homepage.html#page-top
 
 	
